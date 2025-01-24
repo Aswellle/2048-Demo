@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #faf8ef;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sidebar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+    color: #776e65;
+}
+
+.scoreboard {
+    background-color: #bbada0;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.scoreboard p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8f7a66;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #9d8b7a;
+}
+
+.game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#grid-container {
+    width: 400px;
+    height: 400px;
+    background-color: #bbada0;
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+.grid-cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc0b3;
+    border-radius: 6px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc0b3;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #776e65;
+    position: absolute;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    user-select: none;
+}
+
+.tile.merged {
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+#gameover {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#gameover h2 {
+    margin: 0;
+}
+
+#gameover button {
+    margin: 10px;
+}

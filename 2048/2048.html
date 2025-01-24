@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="免费在线畅玩经典2048游戏!">
+    <meta name="keywords" content="2048, 游戏, 谜题, ,难题,在线小游戏, 免费">
+    <meta name="author" content="liweileee">
+    <title>2048游戏Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>2048</h1>
+            <div class="scoreboard">
+                <p>分数: <span id="score">0</span></p>
+                <p>历史最高: <span id="bestScore">0</span></p>
+            </div>
+            <button id="newGameButton">新游戏</button>
+        </div>
+        <div class="game-area">
+            <div id="grid-container">
+                <div class="grid-cell" id="grid-cell-0-0"></div>
+                <div class="grid-cell" id="grid-cell-0-1"></div>
+                <div class="grid-cell" id="grid-cell-0-2"></div>
+                <div class="grid-cell" id="grid-cell-0-3"></div>
+                <div class="grid-cell" id="grid-cell-1-0"></div>
+                <div class="grid-cell" id="grid-cell-1-1"></div>
+                <div class="grid-cell" id="grid-cell-1-2"></div>
+                <div class="grid-cell" id="grid-cell-1-3"></div>
+                <div class="grid-cell" id="grid-cell-2-0"></div>
+                <div class="grid-cell" id="grid-cell-2-1"></div>
+                <div class="grid-cell" id="grid-cell-2-2"></div>
+                <div class="grid-cell" id="grid-cell-2-3"></div>
+                <div class="grid-cell" id="grid-cell-3-0"></div>
+                <div class="grid-cell" id="grid-cell-3-1"></div>
+                <div class="grid-cell" id="grid-cell-3-2"></div>
+                <div class="grid-cell" id="grid-cell-3-3"></div>
+            </div>
+            <div id="gameover">
+                <h2>游戏结束！</h2>
+                <button id="restartButton">再来一局</button>
+                <button id="exitButton">退出游戏</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
